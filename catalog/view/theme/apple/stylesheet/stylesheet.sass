@@ -1,0 +1,46 @@
+@import "bourbon"
+@import "vars"
+@import "fonts"
+
+header
+  background-color: #333
+  padding: 7px 0
+
+.logo
+  margin-top: 4px
+
+.form-control
+  &:focus
+    box-shadow: none
+
+#search
+  width: 100%
+  .form-control
+    padding: 5px 16px
+    height: 35px
+    border: none
+      radius: 0
+    background-color: #444
+    font:
+      style: italyc
+      size: 13px
+      color: #ffffff
+    transition: background-color .25 ease, box-shadow .25 ease
+    box-shadow: transparent 0 0 0 1px inset
+    &:focus, &:hover
+      background-color: #555
+      box-shadow: #777 0 0 0 1px inset
+
+  .input-group-btn
+    position: absolute
+    right: 26px
+    .btn
+      padding: 9px 10px
+      border: none
+      radius: 0
+      background-color: transparent
+      color: #999999
+      font-size: 13px
+
+
+@import "media"
