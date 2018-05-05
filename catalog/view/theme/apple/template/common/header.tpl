@@ -73,7 +73,7 @@
   </div>
 </header>
 
-<nav id="top">
+<nav id="top" class="top-menu">
   <div class="container">
     <div class="row">
       <div class="col-sm-9">
@@ -89,7 +89,7 @@
                   <li><a href="<?php echo $information['href']; ?>"><?php echo $information['title']; ?></a></li>
                   <?php } ?>
                   <li><a href="/skidki">Скидки</a></li>
-                  <li><a href="<?php echo $contact; ?>">Скидки</a></li>
+                  <li><a href="<?php echo $contact; ?>">Контакты</a></li>
                 </ul>
               <?php } ?>
             </ul>
