@@ -86,7 +86,50 @@ ul.col-md-3
       color: #999999
       font-size: 13px
 
+.navbar-collapse.in
+  overflow-y: unset
+
+
 .top-menu
   border-bottom: 1px solid #EDEDED
+  a
+    color: #333
+  .navbar
+    margin-bottom: 0
+    font-size: 14px
+    &-nav
+      > li
+        > a
+          padding-top: 14px
+          padding-bottom: 12px
+          overflow: hidden
+          &:hover, &:focus
+            text-decoration: underline
+            background: none
+
+#cart
+  button
+    background-color: $accent3
+    color: #fff
+    border-radius: 0
+    padding-top: 14px
+    padding-bottom: 15px
+    border: none
+    font-family: MyriadSetProThin, sans-serif
+    font-size: 16px
+    text-align: left
+
+.cart-wrapper
+  padding-left: 0
+
+.toggle-top-text
+  text-transform: uppercase
+  display: inline-block
+  color: $accent
+  font-family: MyriadSetProSemiBold, sans-serif
+  padding: 16px 0
+
+.navbar-toggle
+  margin-right: 0
 
 @import "media"
