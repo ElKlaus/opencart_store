@@ -143,5 +143,58 @@ ul.col-md-3
   font-size: 35px
   opacity: .4
 
+a
+  outline: none!important
+
+.list-group-item
+  padding: 12px 15px
+  border-color: #ededed
+  transition: background .25s ease, color .25s ease, text-intend .25s ease, border-color .25s ease
+  border:
+    bottom: 1px transparent solid
+    top: 1px transparent solid
+  &:first-child
+    border-radius: 0
+    border-top: 1px #ededed solid
+  &:last-child
+    border-radius: 0
+    border-bottom: 1px #ededed solid
+
+a.list-group-item:focus, a.list-group-item:hover, button.list-group-item:focus, button.list-group-item:hover
+  background-color: $accent2
+  border-color: $accent2
+  color: #fff
+  text-indent: 10px
+
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover
+  background-color: darken($accent2, 5%)
+  border-color: darken($accent2, 5%)
+  text-indent: 10px
+
+.common-home
+  #content
+    .owl-carousel
+      margin-bottom: 40px
+    h3
+      text-align: center
+      font-size: 28px
+      font-family: MyriadSetProThin, sans-serif
+      margin-bottom: 40px
+
+.product-layout
+  .caption
+    p
+      display: none
+      &.price
+        display: block
+      .price-tax
+        display: none
+    .rating
+      display: none
+  .button-group
+    > *
+      display: none
+      &:first-child
+        display: block
 
 @import "media"
