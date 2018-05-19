@@ -31,6 +31,10 @@
 <?php } ?>
 <?php foreach ($scripts as $script) { ?>
 <script src="<?php echo $script; ?>" type="text/javascript"></script>
+
+<script src="catalog/view/theme/apple/libs/equalHeights/equalheights.js" type="text/javascript"></script>
+<script src="catalog/view/theme/apple/js/theme.js" type="text/javascript"></script>
+
 <?php } ?>
 <?php foreach ($analytics as $analytic) { ?>
 <?php echo $analytic; ?>
@@ -40,7 +44,6 @@
 <header>
   <div class="container">
     <div class="row">
-
       <div class="col-md-3 col-sm-3">
           <div id="logo" class="logo">
             <?php if ($logo) { ?>

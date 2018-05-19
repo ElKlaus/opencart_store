@@ -93,6 +93,10 @@ ul.col-md-3
 .top-menu
   border-bottom: 1px solid #EDEDED
   margin-bottom: 40px
+  .cart-wrapper
+    .dropdown-menu
+      padding: 15px
+      width: 460px
   a
     color: #333
   .navbar
@@ -107,6 +111,20 @@ ul.col-md-3
           &:hover, &:focus
             text-decoration: underline
             background: none
+
+#cart button + .dropdown-menu
+  margin-top: 1px
+  .btn-danger
+    border-radius: 15em
+    width: 20px
+    height: 20px
+    line-height: 0
+    padding: 0
+    text-align: center
+    font-size: 12px
+    background-color: #d9534f
+  li:first-child:last-child p
+    margin: 0
 
 #cart
   button
@@ -174,15 +192,33 @@ a.list-group-item:focus, a.list-group-item:hover, button.list-group-item:focus, 
 .common-home
   #content
     .owl-carousel
-      margin-bottom: 40px
+      margin-bottom: 60px
     h3
       text-align: center
       font-size: 28px
       font-family: MyriadSetProThin, sans-serif
-      margin-bottom: 40px
+      margin:
+        bottom: 40px
+        top: 80px
 
 .product-layout
+  .price
+    font-size: 18px
+    font-family: MyriadSetProThin, sans-serif
+    .price-old
+      font-size: 15px
+      text-decoration: line-through
+  > .product-thumb
+    transition: box-shadow .25s ease
+    padding: 40px 0 0
+    text-align: center
+    margin-bottom: 40px
+    .image
+      padding: 0 25px
+    &:hover
+      box-shadow: #ededed 0 0 0 1px inset
   .caption
+    padding: 0 25px
     p
       display: none
       &.price
@@ -191,10 +227,49 @@ a.list-group-item:focus, a.list-group-item:hover, button.list-group-item:focus, 
         display: none
     .rating
       display: none
+  h4
+    margin-top: 25px
+    a
+      color: #333
+      font-size: 22px
+      font-family: MyriadSetProThin, sans-serif
+      &:hover, &:focus
+        text-decoration: none
+        border-bottom: #333 solid 1px
   .button-group
+    margin-top: 10px
     > *
       display: none
       &:first-child
         display: block
+      &.toclick
+        display: block
+  button, .button
+    &.toclick
+      font-size: 14px
+      color: #777777
+      background-color: #f5f1f3
+      padding: 9px 0
+      &:hover, &:focus
+        background-color: darken(#f5f1f3, 3%)
+    border: none
+    background-color: $accent2
+    color: #fff
+    width: 100%
+    padding: 8px 0
+    font-size: 18px
+    transition: background-color .25s ease
+    outline: none    
+    &:hover, &:focus
+      background-color: lighten($accent2, 5%)
+      text-decoration: none
+    &:active
+      background-color: darken($accent2, 5%)
+    .fa
+      display: none
+
+.alert
+  border-radius: 0
+
 
 @import "media"
