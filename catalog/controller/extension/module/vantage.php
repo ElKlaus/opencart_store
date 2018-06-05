@@ -37,6 +37,7 @@ class ControllerExtensionModuleVantage extends Controller {
 		$data['text_delivery'] = $setting['text_delivery'];
 		$data['icon_delivery'] = $setting['icon_delivery'];
 
+
 		//Select template
 		return $this->load->view('extension/module/vantage', $data);
 

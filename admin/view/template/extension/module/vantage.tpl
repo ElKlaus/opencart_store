@@ -5,6 +5,7 @@
 		<div class="container-fluid">
 			<div class="pull-right">
 				<button type="submit" form="form-vantage" data-toggle="tooltip" title="<?php echo $button_save; ?>" class="btn btn-primary"><i class="fa fa-save"></i></button>
+
 				<a href="<?php echo $cancel; ?>" data-toggle="tooltip" title="<?php echo $button_cancel; ?>" class="btn btn-default"><i class="fa fa-reply"></i></a>
 			</div>
 			<h1><?php echo $heading_title; ?></h1>
@@ -27,7 +28,12 @@
 				<h3 class="panel-title"><i class="fa fa-cogs"></i> <?php echo $heading_title; ?></h3>
 			</div>
 			<div class="panel-body">
+<<<<<<< HEAD
 				<form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" id="form-vantage" class="form-horizontal">
+=======
+				<p><?php echo $placeholder; ?></p>
+				<form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" id="form-starter" class="form-horizontal">
+>>>>>>> 8079f743aeb01dbca2a51cd476a9b351c81549e1
 					
 					<div class="form-group">
 						<label class="col-sm-2 control-label" for="input-name"><?php echo $entry_name; ?></label>
@@ -53,6 +59,7 @@
 							</select>
 						</div>
 					</div>
+<<<<<<< HEAD
 					
 					<div class="form-group">
 						
@@ -164,6 +171,17 @@
 
 						</div>
 
+=======
+
+					<div class="form-group">
+						<label class="col-sm-2 control-label" for="input-field"><?php echo $custom_field; ?></label>
+						<div class="col-sm-10">
+							<input type="text" name="field" value="<?php echo $field; ?>" placeholder="<?php echo $custom_field; ?>" id="input-field" class="form-control" />
+							<?php if ($error_field) { ?>
+							<div class="text-danger"><?php echo $error_field; ?></div>
+							<?php } ?>
+						</div>
+>>>>>>> 8079f743aeb01dbca2a51cd476a9b351c81549e1
 					</div>
 
 				</form>

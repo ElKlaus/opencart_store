@@ -64,6 +64,7 @@ class ControllerExtensionModuleVantage extends Controller {
 			$data['error_name'] = '';
 		}
 
+<<<<<<< HEAD
 		if (isset($this->error['text_warranty'])) {
 			$data['error_text_warranty'] = $this->error['text_warranty'];
 		} else {
@@ -110,6 +111,12 @@ class ControllerExtensionModuleVantage extends Controller {
 			$data['error_icon_delivery'] = $this->error['icon_delivery'];
 		} else {
 			$data['error_icon_delivery'] = '';
+=======
+		if (isset($this->error['field'])) {
+			$data['error_field'] = $this->error['field'];
+		} else {
+			$data['error_field'] = '';
+>>>>>>> 8079f743aeb01dbca2a51cd476a9b351c81549e1
 		}
 		
 		$data['breadcrumbs'] = array();
@@ -176,6 +183,7 @@ class ControllerExtensionModuleVantage extends Controller {
 
 		// Custom module fields
 
+<<<<<<< HEAD
 		if (isset($this->request->post['text_warranty'])) {
 			$data['text_warranty'] = $this->request->post['text_warranty'];
 		} elseif (!empty($module_info)) {
@@ -238,6 +246,14 @@ class ControllerExtensionModuleVantage extends Controller {
 			$data['icon_delivery'] = $module_info['icon_delivery'];
 		} else {
 			$data['icon_delivery'] = '';
+=======
+		if (isset($this->request->post['field'])) {
+			$data['field'] = $this->request->post['field'];
+		} elseif (!empty($module_info)) {
+			$data['field'] = $module_info['field'];
+		} else {
+			$data['field'] = '';
+>>>>>>> 8079f743aeb01dbca2a51cd476a9b351c81549e1
 		}
 
 		//Prepare for display
@@ -258,6 +274,7 @@ class ControllerExtensionModuleVantage extends Controller {
 			$this->error['name'] = $this->language->get('error_name');
 		}
 
+<<<<<<< HEAD
 		if ((utf8_strlen($this->request->post['text_warranty']) < 3) || (utf8_strlen($this->request->post['text_warranty']) > 128)) {
 			$this->error['text_warranty'] = $this->language->get('error_text_warranty');
 		}
@@ -284,6 +301,10 @@ class ControllerExtensionModuleVantage extends Controller {
 		}
 		if ((utf8_strlen($this->request->post['icon_delivery']) < 2) || (utf8_strlen($this->request->post['icon_delivery']) > 32)) {
 			$this->error['icon_delivery'] = $this->language->get('error_icon_delivery');
+=======
+		if ((utf8_strlen($this->request->post['field']) < 3) || (utf8_strlen($this->request->post['field']) > 64)) {
+			$this->error['field'] = $this->language->get('error_field');
+>>>>>>> 8079f743aeb01dbca2a51cd476a9b351c81549e1
 		}
 
 		return !$this->error;
