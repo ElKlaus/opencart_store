@@ -13,4 +13,10 @@ $(function () {
 
   $('.product-thumb h4').css('height', '').equalHeights();
 
+  $('.toclick, .callback').magnificPopup({
+    mainClass: 'mfp-zoom-in',
+    removalDelay: 500
+
+  })
+
 });
