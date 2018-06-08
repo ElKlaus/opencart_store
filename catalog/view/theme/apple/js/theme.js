@@ -11,23 +11,23 @@ $(function () {
         admin = $('#callback [name=admin_email]').val();
 
     $(this).after('\
-    <div id="pp-item-'+ e +'"class="product-popup">\
-      <h2>Купить в один клик</h2>\
-      <div class="pp-img-wrap"><img src="' + img_url + '" alt="Айфонсервис"></div>\
-      <div class="pp-content">\
-        <h3>' + item_name + '</h3>\
-        <p>' + item_price + '</p>\
-        <form class"ajax-form">\
-          <input type="hidden" name="project_name" value="IphoneService">\
-          <input type="hidden" name="admin_email" value="' + admin + '">\
-          <input type="hidden" name="form_subject" value="Заявка с сайта Айфонсервис">\
-          <input type="hidden" name="Продукт" value="' + item_name + '">\
-          <input class="form-control" type="text" name="Телефон" placeholder="Введите ваш телефон..." required>\
-          <button class="btn btn-primary">Заказать</button>\
-        </form>\
-        <div class="success">Спасибо за заявку!</div>\
-      </div>\
-    </div>');
+		<div id="pp-item-' + e + '" class="product-popup">\
+			<h2>Купить в один клик</h2>\
+			<div class="pp-img-wrap"><img src="' + img_url + '" alt="Айфонсервис"></div>\
+			<div class="pp-content">\
+				<h3>' + item_name + '</h3>\
+				<p>' + item_price + '</p>\
+				<form class="ajax-form">\
+					<input type="hidden" name="project_name" value="IphoneService">\
+	        <input type="hidden" name="admin_email" value="' + admin + '">\
+	        <input type="hidden" name="form_subject" value="Заявка с сайта Айфонсервис">\
+	        <input type="hidden" name="Продукт" value="' + item_name + '">\
+	        <input class="form-control" type="text" name="Телефон" placeholder="Введите ваш телефон..." required>\
+	         <button class="btn btn-primary">Заказать</button>\
+				</form>\
+				<div class="success">Спасибо за заявку!</div>\
+			</div>\
+		</div>');
 
     $(this).find('.button-group').append('<a class="button toclick" href="#pp-item-' + e + '"> Купить в один клик</a>');
 
