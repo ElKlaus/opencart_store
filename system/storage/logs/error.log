@@ -45,3 +45,5 @@
 2018-06-05 16:36:12 - PHP Notice:  Undefined variable: telephone in C:\OpenServer\domains\opencart.loc\catalog\view\theme\apple\template\common\footer.tpl on line 96
 2018-06-05 16:36:36 - PHP Notice:  Undefined variable: logo in C:\OpenServer\domains\opencart.loc\catalog\view\theme\apple\template\common\footer.tpl on line 54
 2018-06-05 16:36:36 - PHP Notice:  Undefined variable: telephone in C:\OpenServer\domains\opencart.loc\catalog\view\theme\apple\template\common\footer.tpl on line 96
+2018-06-10 16:44:09 - PHP Notice:  Undefined variable: meta_title in C:\OpenServer\domains\opencart.loc\catalog\view\theme\apple\template\product\category.tpl on line 17
+2018-06-10 16:44:19 - PHP Notice:  Undefined variable: meta_title in C:\OpenServer\domains\opencart.loc\catalog\view\theme\apple\template\product\category.tpl on line 17

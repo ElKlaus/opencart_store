@@ -14,36 +14,18 @@
     <?php $class = 'col-sm-12'; ?>
     <?php } ?>
     <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
-      <h1><?php echo $heading_title; ?></h1>
+      <h1><?php echo $meta_title; ?></h1>
       
       <?php if ($products) { ?>
-      <div class="row">
+      <div class="row cat-head">
         <div class="col-md-8">
           <?php if ($categories) { ?>
-            <h3><?php echo $text_refine; ?></h3>
-            <?php if (count($categories) <= 5) { ?>
-            <div class="row">
-              <div class="col-sm-9">
-                <ul>
-                  <?php foreach ($categories as $category) { ?>
-                  <li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a></li>
-                  <?php } ?>
-                </ul>
-              </div>
-            </div>
-            <?php } else { ?>
-            <div class="row">
-              <?php foreach (array_chunk($categories, ceil(count($categories) / 4)) as $categories) { ?>
-              <div class="col-sm-3">
-                <ul>
-                  <?php foreach ($categories as $category) { ?>
-                  <li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a></li>
-                  <?php } ?>
-                </ul>
-              </div>
-              <?php } ?>
-            </div>
+          <div class="sub-cats">
+            <div class="sub-name"><?php echo $text_refine; ?>:</div>
+            <?php foreach ($categories as $category) { ?>
+            <a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a>
             <?php } ?>
+          </div>
           <?php } ?>
         </div>
         <div class="col-md-4">
@@ -104,10 +86,6 @@
           </div>
         </div>
         <?php } ?>
-      </div>
-      <div class="row">
-        <div class="col-sm-6 text-left"><?php echo $pagination; ?></div>
-        <div class="col-sm-6 text-right"><?php echo $results; ?></div>
       </div>
       <?php } ?>
       <?php if (!$categories && !$products) { ?>
